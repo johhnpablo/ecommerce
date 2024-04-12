@@ -11,6 +11,16 @@ class BladeController extends Controller
         return view('index');
     }
 
+    public function store(Request $request)
+    {
+        $request->validate([
+            'email' => 'required | email',
+            'name' => 'required | name',
+        ]);
+
+        return redirect()->back()
+            ->with('sucess', 'Enviado com sucesso!');
+    }
     public function secondPage()
     {
         return view('second');
