@@ -25,9 +25,9 @@ class Alert extends Component
     public function getBgClass()
     {
         $bgClass = [
-            'success' => 'bg-green-500',
-            'warning' => 'bg-yellow-50',
-            'error' => 'bg-red-50',
+            'success' => 'bg-green-100',
+            'warning' => 'bg-yellow-100',
+            'error' => 'bg-red-100',
         ];
             return $bgClass[$this->type];
     }

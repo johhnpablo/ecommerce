@@ -30,12 +30,24 @@
         <h1 class="text-4xl font-bold">Second Page</h1>
         <p class="text-lg">This is second page.</p>
     </div>
-    <div class="px-32 w-3/12 m-auto">
+    <div class="px-32 w-3/12 m-auto grid grid-cols-1 gap-4">
         <x-alert
             type="success"
             title="Criado"
             message="Criado com sucesso"
         />
+        <x-alert
+            type="error"
+            title="Criado"
+            message="Criado com sucesso"
+        />
+        <x-alert
+            type="warning"
+            title="Criado"
+            message="Criado com sucesso"
+        />
 
     </div>
+
+
 @endsection
