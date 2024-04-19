@@ -30,23 +30,35 @@
         <h1 class="text-4xl font-bold">Second Page</h1>
         <p class="text-lg">This is second page.</p>
     </div>
-    <div class="px-32 w-3/12 m-auto grid grid-cols-1 gap-4">
+    <div class="px-32 w-4/12 m-auto grid grid-cols-1 gap-4">
         <x-alert
             type="success"
-            title="Criado"
-            message="Criado com sucesso"
+            title="Título do Sucesso"
+            message="Mensagem do sucesso"
         />
         <x-alert
             type="error"
-            title="Criado"
-            message="Criado com sucesso"
+            title="Título do Error"
+            message="Mensagem do Error"
         />
         <x-alert
             type="warning"
-            title="Criado"
-            message="Criado com sucesso"
-        />
+            title="Título do Alerta"
+            message="Mensagem do Alerta">
+            <x-slot:icon>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-6 h-6 text-yellow">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
+                </svg>
+            </x-slot:icon>
+            <span>text</span>
+        </x-alert>
+    <span
+        class="
+        bg-green-100 bg-red-100 bg-yellow-100 text-green-700 text-green-800 text-red-700 text-red-800 text-yellow-700 text-yellow-800
+        "
+    >
 
+    </span>
     </div>
 
 

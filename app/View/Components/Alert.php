@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use Carbon\Carbon;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -15,11 +16,15 @@ class Alert extends Component
     public string $type;
     public string $message;
     public string $title;
-    public function __construct(string $type, string $message, string $title)
+    public string $icon;
+    public string $now;
+    public function __construct(Carbon $date,string $type, string $message, string $title, $icon = "")
     {
         $this->type = $type;
         $this->message = $message;
         $this->title = $title;
+        $this->icon = $icon;
+        $this->now = $date->now()->format("d/m/Y");
     }
 
     public function getBgClass()
