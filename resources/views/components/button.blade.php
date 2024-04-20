@@ -1,17 +1,31 @@
 <button
+    type="{{ $type }}"
+    @class([
+        "rounded flex items-center justify-center text-md px-4",
+        "bg-blue-500 hover:bg-blue-600 active:bg-blue-900 disabled:bg-gray-500 text-white" => $variation === "primary",
+        "bg-withe border-solid border border-blue-500 text-blue-500 hover:border-blue-600 hover:text-blue-600 active:text-blue-900 active:text-blue-900 disabled:border-gray-500 disable:text-gray-500" => $variation === "outline",
+        "py-3" => $size === "large",
+        "py-2.5" => $size === "medium",
+        "py-2" => $size === "small",
 
-    {{ $attributes
-    ->merge(['type' => 'button', 'data_customerid' => 1])
-    ->class([
-        "text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600
-        hover:bg-gradient-to-br focus:ring-1  focus:ring-cyan-300 dark:focus:ring-cyan-800
-        font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-        ])
-     }}
+
+    ])
 >
-   @if($attributes->get('mode') === 'Enviar')
-       {{ $attributes->get('mode') }}
-   @else
-        Registrar
-   @endif
+    <div class="flex flex-row items-center">
+        @if (!empty($icon) && $iconPosition === 'left' )
+            <x-icon :name="$icon" />
+        @endif
+        @if(!empty($text))
+            <span @class([
+                "ml-2" => !empty($icon) && $iconPosition === 'left',
+                "mr-2" => !empty($icon) && $iconPosition === 'right',
+
+                ])>
+                {{ $text }}
+        @endif
+            </span>       @if (!empty($icon) && $iconPosition === 'right' )
+            <x-icon :name="$icon" />
+        @endif
+
+    </div>
 </button>
