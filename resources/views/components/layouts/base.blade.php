@@ -11,9 +11,16 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="min-h-screen w-full flex">
+<body class="min-h-screen w-full flex items-start ">
 
-    {{ $slot }}
+    <div class="flex flex-col  items-center w-full ">
+        <x-header logo="logo.svg"/>
+
+
+        {{ $slot }}
+
+        <x-footer logo="logo.svg" />
+    </div>
 
 </body>
 </html>
