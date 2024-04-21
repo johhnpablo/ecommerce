@@ -1,4 +1,4 @@
-<div class="flex flex-col w-full mt-6">
+<div {{$attributes->class(['flex flex-col w-full mt-6'])}} x-transition.500ms>
     <div class="flex flex-row justify-between border-b border-solid border-gray-300">
         <h1 class="text-title-5 font-semibold mt-4">Reviews</h1>
         <x-forms.button class="mb-1" type="button" text="Write review" size="small" variation="primary" icon="edit_note" icon-position="left"/>

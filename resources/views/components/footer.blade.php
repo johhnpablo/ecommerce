@@ -1,29 +1,29 @@
 <div class="w-full flex flex-col bg-gray-300 items-center ">
-    <div class="flex flex-row w-full justify-between px-24 py-6  pb-12 border-b border-solid border-gray-500  ">
-        <div class="flex flex-col w-full gap-4">
+    <div class="flex flex-col gap-4 md:gap-0 md:flex-row w-full justify-between px-8 md:px-24 py-6  pb-12 border-b border-solid border-gray-500  ">
+        <div class="flex flex-col w-full  gap-6 md:gap-4 pb-2 border-solid border-b border-gray-400 md:border-none">
             <img class="w-36" src="{{ Vite::images($logo) }}" >
             <span class="text-title-5 font-semibold">(88)9.9964-4562</span>
             <span class="text-title-5 font-semibold">email@email.com</span>
         </div>
-        <div class="flex flex-col w-full gap-4">
+        <div class="flex flex-col w-full gap-4 pb-2 border-solid border-b border-gray-400 md:border-none">
             <h1 class="text-title-5 font-semibold">Shop</h1>
             <a href="#" class="text-sm font-light">Men</a>
             <a href="#" class="text-sm font-light">Womem</span>
             <a href="#" class="text-sm font-light">Acessories</a>
         </div>
-        <div class="flex flex-col w-full gap-4">
-            <h1 class="text-title-5 font-semibold">Shop</h1>
+        <div class="flex flex-col w-full gap-4 pb-2 border-solid border-b border-gray-400 md:border-none">
+            <h1 class="text-title-5 font-semibold">Support</h1>
             <a href="#"  class="text-sm font-light">FAQ</a>
             <a href="#"  class="text-sm font-light">Shipping</a>
             <a href="#"  class="text-sm font-light">Contact us</a>
         </div>
-        <div class="flex flex-col w-full gap-4">
+        <div class="flex flex-col w-full gap-4 pb-2 border-solid border-b border-gray-400 md:border-none">
             <h1 class="text-title-5 font-semibold">Quick Links</h1>
             <a href="#"  class="text-sm font-light">Terms of use</a>
             <a href="#"  class="text-sm font-light">Support</a>
             <a href="#"  class="text-sm font-light">Privacy & Cookies</a>
         </div>
-        <div class="flex flex-col w-full gap-4">
+        <div class="flex flex-col w-full gap-6 md:gap-4">
             <h1 class="text-title-5 font-semibold">Newsletter</h1>
             <x-forms.input name="email" type="email" size="medium" placeholder="Email" icon="trending_flat" icon-position="right"  />
             <div class="flex flex-row w-full gap-4">

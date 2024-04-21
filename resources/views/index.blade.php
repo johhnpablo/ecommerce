@@ -22,11 +22,7 @@
                 <x-tab-product/>
             </div>
         </div>
-        <div class="container flex flex-col mt-6 w-full">
-            <div class="flex flex-row w-full">
-                <x-reviews/>
-            </div>
-        </div>
+
 
     </div>
 </x-layouts.base>

@@ -1,4 +1,4 @@
-<div class=" px-24 flex flex-row items-center justify-between py-4 w-full border-b border-solid border-gray-300">
+<div class=" px-12 md:px-24 flex flex-row items-center justify-between py-4 w-full border-b border-solid border-gray-300">
     <div class="">
         <img class="w-20 md:w-36" src="{{ Vite::images($logo) }}" alt="" />
     </div>
