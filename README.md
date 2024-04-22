@@ -14,3 +14,8 @@ Tailwind CSS: Estilização responsiva e personalizável, permitindo ajustes rá
 A partir deste projeto, a ideia é aplicar os aprendizados em uma aplicação de ecommerce mais completa. O projeto atual é um protótipo para validar habilidades e conceitos de frontend, servindo como base para projetos mais complexos no futuro.
 
 Espero que essa descrição tenha capturado a essência do seu projeto. Se precisar de mais detalhes ou explicações, posso ajudar com prazer!
+
+
+
+https://github.com/johhnpablo/ecommerce/assets/92765140/ab1c2962-8825-4b5d-8b3d-045d46aa4948
+
