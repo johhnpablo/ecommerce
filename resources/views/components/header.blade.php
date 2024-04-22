@@ -44,6 +44,7 @@
         </x-forms.button>
 
         <x-forms.button
+            @click="$dispatch('open-cart')"
             type="button"
             variation="outline"
             size="small"

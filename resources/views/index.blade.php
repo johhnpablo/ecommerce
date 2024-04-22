@@ -1,7 +1,8 @@
 <x-layouts.base>
     <div class="container p-12 flex flex-col">
-        <h1 class="text-title-5 font-bold">Product Name</h1>
 
+        <x-cart/>
+        <h1 class="text-title-5 font-bold">Product Name</h1>
         <x-bread-crumb :items="['Home', 'Product', 'ProductName']" />
 
         <div class="flex flex-col lg:flex-row justify-between">

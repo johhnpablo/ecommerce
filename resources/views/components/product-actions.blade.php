@@ -11,7 +11,7 @@
             <span class="text-title-5 font-bold" x-text="count"></span>
             <x-forms.button @click="count < 5 ? count++ : count = 5" type="button" variation="outline" size="small" icon="add" icon-position="right" />
         </div>
-        <x-forms.button class="mt-4"  type="button" variation="primary" size="small" icon="shopping_cart" text="Add to Cart" icon-position="left" />
+        <x-forms.button @click="$dispatch('open-cart')" class="mt-4"  type="button" variation="primary" size="small" icon="shopping_cart" text="Add to Cart" icon-position="left" />
         <x-forms.button class="mt-2" type="button" variation="outline" size="small" text="Buy now!" icon-position="right" />
         <div class="flex flex-col items-start mt-4 space-y-1">
             @foreach([1, 2, 3] as $item)
